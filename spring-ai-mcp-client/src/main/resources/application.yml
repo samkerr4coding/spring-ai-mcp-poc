@@ -1,0 +1,39 @@
+spring:
+#  data:
+#    redis:
+#      url: redis://localhost:6379
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+#      embedding:
+#        options:
+#          model: mistral:7b
+#    model:
+#      embedding: ollama
+#    vectorstore:
+#      redis:
+#        initialize-schema: true
+#        index-name: "default-index"
+#        prefix: "default:"
+  application:
+    name: LLM CLI
+  banner:
+    location: classpath:banner.txt
+  main:
+    log-startup-info: false
+  threads:
+    virtual:
+      enabled: true
+  shell:
+    interactive:
+      enabled: true
+    command:
+      history.enabled: false
+      script.enabled: false
+      version.enabled: false
+    theme:
+      name: default
+
+logging.level:
+  root: ERROR
+  org.jline: off

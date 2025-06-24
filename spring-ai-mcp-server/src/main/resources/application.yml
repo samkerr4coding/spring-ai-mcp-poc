@@ -1,0 +1,15 @@
+# Using spring-ai-starter-mcp-server
+spring:
+  ai:
+    mcp:
+      server:
+        name: mcp-server-spring-workshop
+        version: 0.0.1
+        type: SYNC
+  main:
+    banner-mode: off
+    web-application-type: none
+logging:
+  pattern:
+    console:
+    file: ./target/mcp-server-spring-workshop.log
