@@ -1,4 +1,3 @@
-```markdown
 # Spring AI MCP Proof of Concept
 
 This project demonstrates a simple Proof of Concept (PoC) integrating Spring AI with the Model Context Protocol (MCP) to interact with Large Language Models (LLMs) like Qwen3 and Ollama. It provides a client-server architecture where the client interacts with the LLM through the MCP server, leveraging a set of tools exposed by the server.
