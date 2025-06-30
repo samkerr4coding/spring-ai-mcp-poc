@@ -4,12 +4,19 @@ import org.springframework.shell.command.annotation.Command;
 import org.springframework.shell.context.InteractionMode;
 import org.springframework.shell.standard.commands.Quit;
 
+/**
+ * Custom command to gracefully exit the application.
+ */
 @Command
 public class CustomExitCommand implements Quit.Command {
 
-    @Command(command = "exit", interactionMode = InteractionMode.INTERACTIVE, description = "Exit the shell")
+    /**
+     * Custom exit command that terminates the application.
+     * This method overrides the default exit command to provide a farewell message.
+     */
+    @Command(command = "exit", interactionMode = InteractionMode.INTERACTIVE, description = "Terminate the shell session")
     public void exit() {
-        System.out.println("Goodbye!");
+        System.out.println("Farewell!");
         System.exit(0);
     }
 }
